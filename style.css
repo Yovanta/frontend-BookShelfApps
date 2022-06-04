@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #87aab4;
+    background: -webkit-linear-gradient(to left, #00c9ff, #6268d3);
+    background: linear-gradient(to left, #00c9ff, #6268d3); 
+    color: white;
+}
+
+.head_bar_logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+main {
+    padding: 16px;
+}
+
+#content {
+    float: left;
+    width: 50%;
+
+}
+
+aside {
+    float: right;
+    width: 50%;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: white;
+    background: #87aab4;
+    background: -webkit-linear-gradient(to left, #00c9ff, #6268d3);
+    background: linear-gradient(to left, #00c9ff, #6268d3); 
+    
+    
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+
+}
+
+.input_section> form > .input> input ,
+.search_section>form>input{   
+    background:#ebeeee;
+}
+
+.input_section > form > button {
+    background-color: #6268d3;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.search_section > h2 {
+    color: cornflowerblue;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;  
+}
+
+.search_section > form > button {
+    background-color: #6268d3;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-button {
+    background: url('assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('assets/check-solid.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.delete-button {
+    background: url('assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-button:hover{
+    background: url('assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button{
+    background: url('assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.book_shelf {
+    width: 98%;
+    margin: 16px;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 6px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.book_shelf > h2 {
+    color: cornflowerblue;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > bookList  {
+    background: #7F7FD5; 
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #9292e4);
+    color: rgb(71, 69, 69);
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    #content,
+    aside {
+        margin: 20px 0 0 0;  
+        width: 100%;
+        padding: 0;
+    }
+}
